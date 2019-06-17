@@ -26,9 +26,7 @@ if ($consulta->execute(array($nombre, $descripcion, $id_usuario, $institucion, $
     $seGuardo_db = 1;
     $mail = 'nancy.cevallos@epn.edu.ec';
     $user = 'nancy';
-
-    enviar_mail3($mail, $user, $target_file);
-    actualizar_cant_materia($cbx_materia);
+        actualizar_cant_materia($cbx_materia);
     echo "1";
 } else {
     $seGuardo_db = 0;

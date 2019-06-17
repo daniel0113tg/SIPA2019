@@ -22,7 +22,7 @@ $path = $_FILES['file']['name'];
 $ext = pathinfo($path, PATHINFO_EXTENSION);
 $target_file = $carpeta .urlencode($path);
 
-insertar_usuario($usuario, $contrasenia,'EST', 'V');
+insertar_usuario($usuario, $contrasenia,'EST', 'F');
 $id_usuario= recuperar_id_usuario_por_nombre($usuario);
  echo '<script>alert('.$carrera.')</script> ';
 if(insertar_estudiante($cedula, $nombres, $apellidos, $carrera, $facultad, $email, $id_usuario,$target_file)){

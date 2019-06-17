@@ -205,7 +205,7 @@ function obtener_lista_de_usuarios() {
 
 function insertar_usuario($usuario, $contrasenia, $tipo_usuario, $esta_activo) {
     $conexion = new Conexion();
-    $statement = 'INSERT INTO usuario (usuario,contrasenia,tipo_usuario, activo) VALUES (?,?,?, ?)';
+    $statement = 'INSERT INTO usuario (usuario,contrasenia,tipo_usuario, activo) VALUES (?,?,?,?)';
     $consulta = $conexion->prepare($statement);
     if ($consulta->execute(array($usuario, $contrasenia, $tipo_usuario, $esta_activo))) {
         return true;
